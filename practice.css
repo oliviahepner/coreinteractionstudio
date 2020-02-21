@@ -1,0 +1,24 @@
+.section {
+	font-family: Source Sans Pro, sans-serif;
+	width: 25%
+	margin: 1%, 2%, 3%, 5%;
+	padding:;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.section h1{
+	font-size:0.9em;
+
+}
+
+.section p{
+	font-size:0.85em;
+}
+.section hr{
+	width:100%;
+	border-top: 0.5em solid #494646;
+}
+.section a{
+	color:#494646;
+}

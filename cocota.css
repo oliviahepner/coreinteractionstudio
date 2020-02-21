@@ -1,0 +1,35 @@
+h3 {
+	font-family: Helvetica, sans-serif;
+	width: 100%
+	
+	padding:;
+	display: inline-block;
+	vertical-align: top;
+}
+.h2{
+	font-family: Poppins, serif;
+	width: 100%
+		padding:;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 7em;
+	margin-left:2.5em;
+
+}
+.h2b{
+	font-family: Poppins, serif;
+	width: 100%
+	margin: 4%, 2%, 3%, 5%;
+	padding:;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 7em;
+	margin-left:2.5em;
+}
+hr { 
+    display: block;
+    margin-right: 5em;
+    margin-left: 18em;
+    width:1000px;
+    color:red;
+}
