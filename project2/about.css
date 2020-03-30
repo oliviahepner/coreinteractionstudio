@@ -1,0 +1,55 @@
+html{
+  background-color: #222222;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+margin-left: 40px;
+font-size: 55px;
+}
+li {
+  display: inline;
+float:right;
+font-size:30px;
+margin-right:200px;
+
+}
+ul {
+ 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li a {
+
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.about{
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p{
+  text-align: left;
+}
