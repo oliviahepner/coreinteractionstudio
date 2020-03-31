@@ -31,7 +31,7 @@ li a {
   text-decoration: none;
 }
 .about{
-
+margin-left: 100px;
 
 }
 * {
@@ -76,6 +76,7 @@ li a {
 
 p{
   text-align: left;
+  font-size: 20px;
 }
 .nyc{
   font-size: 60px;
