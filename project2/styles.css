@@ -30,6 +30,21 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+.topnav {
+  overflow: hidden;
+  background-color: ;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
 
 
 .carousel-wrapper {
