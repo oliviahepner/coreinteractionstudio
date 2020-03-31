@@ -59,6 +59,10 @@ li a {
   width: 33.33%;
   padding: 10px;
   height: 300px; 
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 1px;
 }
 
 .row:after {
