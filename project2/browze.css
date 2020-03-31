@@ -52,7 +52,7 @@ a:active {
   width: 25%;
   padding: 10px;
   height: 470px; 
-
+  position:relative;
 }
 
 .row:after {
