@@ -107,7 +107,7 @@ element=document.querySelector('#scene')
 player = document.querySelector("lottie-player");
 controls = document.querySelectorAll('.progress div');
 progress = 1
-prefix = 'https://raw.github.com/oliviahepner/motion_intro/index.html'
+prefix = 'https://raw.githubusercontent.com/oliviahepner/coreinteractionstudio/master/motion_intro/data/1.json'
 document.querySelector('#l1').style.backgroundColor="#666666";
 getAnim(prefix+'1.json',true);
 
@@ -215,7 +215,7 @@ function getAnim(path, autoplay_value){
 	target.appendChild(container)
 
 	// gets the right text and displays it
-	d3.csv('https://raw.githubusercontent.com/3milychu/mobile_intro/master/data/text.csv')
+	d3.csv('')
 		.then(function(data){
 			console.log(data);
 			if(progress==0){
