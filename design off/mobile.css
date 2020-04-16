@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+font-family: "Helvetica Neue", sans-seri;
+font-size: 1.7rem;
+line-height: 1.1;
+}
+​
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  
+
+}
+
+h2{
+	font-size: 3.375rem;
+line-height: 1.1;
+}
+​
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width:801px){
+
+ .colum{ 
+	width:25%;
+}
+@media screen and (max-width 801px){
+	.colum{
+
+
+ max-width:100%;
+}
+}
