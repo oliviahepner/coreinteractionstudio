@@ -30,11 +30,23 @@ line-height: 1.1;
 
 @media screen and (min-width:801px){
 
- .colum{ 
+ .column{ 
 	width:25%;
 }
 @media screen and (max-width 801px){
-	.colum{
+	.column{
+
+
+ max-width:100%;
+}
+}
+@media screen and (min-width:801px){
+
+ .column1{ 
+	width:25%;
+}
+@media screen and (max-width 801px){
+	.column1{
 
 
  max-width:100%;
