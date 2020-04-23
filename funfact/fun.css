@@ -1,0 +1,20 @@
+html{
+margin-top:200px;
+background-color: #0f2d85;
+}
+
+
+.dot {
+  height: 500px;
+  width:500px;
+background-color: #af385f;
+  border-radius: 50%;
+  display: inline-block;
+vertical-align: middle
+box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f, /* middle magenta */
+        0 0 140px 90px #0ff; /* outer cyan */
+        color:white;
+}
+

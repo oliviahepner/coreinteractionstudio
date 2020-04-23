@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun Fact</title>
+	<script src="https://assets3.lottiefiles.com/private_files/lf30_sz9gqn.json"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&amp;display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div class="main-container">
+	<div class="button">Fun Fact</div>
+</div>
+<div id="alert" style="opacity: 0; bottom: -100vh;">
+	<div class="center">
+		<h2>You are so <em> Great!<em></em></em></h2><em><em>
+		<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_uZq6rF.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player>
+	</em></em></div><em><em>
+</em></em></div>
+<em><em>
+
+
+
+<style type="text/css">
+	
+	html, body{
+		background-color:#0f2d85;
+		height:100%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		font-family: 'Patrick Hand', cursive;
+	}
+
+	#alert {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100vh;
+		bottom:-100vh;
+		transition:0.5s cubic-bezier(0,1.22,.81,1.25);
+		cursor:pointer;
+	}
+
+	#alert h2 {
+		margin-top:10%;
+	}
+
+	.center {
+		width:30%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		background-color:/*#04268C*/  #af385f;
+		
+		box-shadow:0em 0em 5em xs;
+		transition:0.5s ease-in-out;
+	}
+
+	.center:hover {
+		border:0.2em solid white;
+	}
+
+	em {
+		display:block;
+		font-size:2em;
+		line-height:0.5em;
+		animation: 2s flash linear infinite;
+	}
+
+	.main-container{
+		width:100%;
+	}
+
+	.button {
+		width:8em;
+		height:8em;
+		font-size:2em;
+		border-radius:50%;
+		background-color:/*#BF265E*/  #af385f;
+		box-shadow: 0.1em 0.1em 4em #F2357B /*#FFE777*/;
+		color:white;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		
+		transition:0.25s ease-in-out;
+		animation:5s pulse ease-in-out infinite;
+		cursor:pointer;
+	}
+
+	.button:hover {
+		
+	}
+
+	@keyframes pulse {
+		0% {
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(1.5);
+		}
+		100%{
+			transform:scale(1);
+		}
+	}
+
+	@keyframes flash {
+		0% {
+			color:/* #FF8D63*/ #FF5E36;
+		}
+		25% {
+			color:/*#FFC049*/ #F54E31;
+		}
+		50% {
+			color: /*#BF265E*/ #FF6C5C;
+		}
+		100% {
+			color: /*#FF8D63*/ #F5352A;
+		}
+
+	}
+
+	@media screen and (max-width:767px){
+		.center {
+			width:80%;
+			height:80vh;
+		}
+	}
+
+</style>
+
+<script type="text/javascript">
+
+button = document.querySelector('.button')
+alert = document.querySelector('#alert')
+
+button.onclick=function() {
+	alert.style.opacity='1'
+	alert.style.bottom='0'
+}
+
+alert.onclick=function() {
+	alert.style.opacity='0'
+	alert.style.bottom='-100vh'
+}
+
+	
+
+</script></em></em>
+</body>
+</html>
