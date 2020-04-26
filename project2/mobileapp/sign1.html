@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+html{
+  background-color: #222222;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+color:white;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+    border-color:white;
+     padding-left: 50px;
+    border:1px solid white;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+  border-color:white;
+  border:1px solid white;
+}
+
+h2{
+  font-size: 15px;
+
+}
+p{
+font-size: 12px;
+margin-top:-10px;
+}
+
+.dropdown {
+ 
+  margin-left: 208px;
+  position: relative;
+  background-color: #222222;
+  display: inline-block;
+  border-radius: 20%;
+    text-decoration: none;
+    font-size:12px;
+
+}
+
+.dropdown-content {
+  margin-top:10px;
+  background-color: #222222;
+  display: none;
+  position: absolute;
+ 
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5%;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+    text-decoration: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: ;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: ;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.boxed {
+  border: 1px solid white ;
+  height: 40px;
+  width: 310px;
+margin-left: 30px;
+
+}
+.boxed1 {
+  border: 1px solid white ;
+  height: 50px;
+  width: 250px;
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+</style>
+<body>
+
+<header class="w3-bar w3-card w3-theme">
+
+
+  <h1 class="w3-bar-item" style="font-weight: 900"><span style="padding:10px" onclick="openNav()">&#9776;</span>NYC CONCERTS<span style="font-weight: 300"> 2020 </span> </h1>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="height:10px"  style="width:10px">&times;</a>
+  <a href="mobile.html">HOME</a>
+  <a href="about1.html">ABOUT</a>
+  <a href="sign.html">SIGN IN</a>
+  <a href="create.html">CREATE ACCOUNT</a>
+</div>
+</header>
+<h2 style="padding-left: 30px"> SIGN IN AS GUEST </h2>
+ <br>
+
+
+   <p style="margin-left: 30px;">NYC CONCERTS WILL NOT SAVE YOUR INFORMATION,</p>
+<div class="boxed" style="padding:10px">
+Full Name
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Email
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Birthday
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Address
+</div>
+
+<br>
+<br>
+ <p style="margin-left: 30px;" >PAYMENT INFORMATION</p>
+ <div class="boxed" style="padding:10px">
+Cardholder Name
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Card Number
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Expire Date
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+CVV
+</div>
+<br>
+<div class="boxed" style="padding:10px">
+Billing Address
+</div>
+<br>
+<br>
+<center>
+  <a href="congrats.html">
+<div class="boxed1" style="padding:15px">
+PURCHASE TICKET
+</div></a>
+</center>
+<br>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+</body>
+

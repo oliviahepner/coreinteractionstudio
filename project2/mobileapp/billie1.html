@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+html{
+  background-color: #222222;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+color:white;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+    border-color:white;
+     padding-left: 50px;
+    border:1px solid white;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+  border-color:white;
+  border:1px solid white;
+}
+
+h2{
+  font-size: 15px;
+
+}
+p{
+font-size: 12px;
+padding-right: 40px;
+padding-left: 40px;
+}
+
+.dropdown {
+ 
+  margin-left: 208px;
+  position: relative;
+  background-color: #222222;
+  display: inline-block;
+  border-radius: 20%;
+    text-decoration: none;
+    font-size:12px;
+
+}
+
+.dropdown-content {
+  margin-top:10px;
+  background-color: #222222;
+  display: none;
+  position: absolute;
+ 
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5%;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+    text-decoration: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: ;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: ;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.item1 {
+ 
+ padding:20px;
+}
+
+.item2{
+text-align: left;
+margin-left: 180px;
+margin-top: -190px;
+
+}
+.boxed {
+  border: 1px solid white ;
+  height: 30px;
+  width: 180px;
+
+
+}
+.item{
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+
+
+</style>
+
+<body>
+
+<header class="w3-bar w3-card w3-theme">
+
+
+  <h1 class="w3-bar-item" style="font-weight: 900"><span style="padding:10px" onclick="openNav()">&#9776;</span>NYC CONCERTS<span style="font-weight: 300"> 2020 </span> </h1>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="height:10px"  style="width:10px">&times;</a>
+  <a href="mobile.html">HOME</a>
+  <a href="about1.html">ABOUT</a>
+  <a href="sign.html">SIGN IN</a>
+  <a href="create.html">CREATE ACCOUNT</a>
+</div>
+</header>
+
+<div class="item1">
+<div class="circular--landscape">
+<img src="billie.jpg"></div></div>
+<div class="item2">
+<h2 style="font-size:20px" style="line-height:5px"> BILLIE ELLISH </h2>
+<h5 style="line-height:10px"> BARCLAY CENTER <br><br>
+ FRIDAY MARCH 20th 7:30PM </h5><a href="tickets1.html" style="text-decoration: none">
+<div class="boxed" style="padding:5px" style="line-height:10px"><center>
+TICKETS</a></center>
+</div>
+</div>
+<p style="padding-top:40px">
+  California-bred singer/songwriter Billie Eilish crafts genre-blurring outcast anthems that bridge the gap between ethereal indie electronic and dark alternative pop. With angsty, introspective lyrics that don’t shy away from issues of mental health, she endeared herself to a devoted audience during her breakthrough years in the late 2010s when she was still just a teenager. On the heels of a sold-out headlining tour, she issued her chart-topping, Grammy-winning debut album, 2019’s When We All Fall Asleep, Where Do We Go?
+Born and raised in Los Angeles, Eilish grew up in a household of actors and musicians and was home-schooled along with her brother Finneas O’Connell (the Slightlys). At the age of eight, she joined the Los Angeles Children’s Choir, developing the soulful vocals that would later appear on her early singles. After the release of the pop-leaning “Six Feet Under” and “Fingers Crossed,” Eilish made her breakthrough with “Ocean Eyes,” produced and co-written with her brother Finneas and released by Interscope. It surpassed 14 million online streams and spawned a number of remixes with Astronomyy, Blackbear, and Goldhouse. Eilish followed up in February 2017 with “Bellyache,” then landed another track, “Bored,” on the Netflix series 13 Reasons Why. An EP, don’t smile at me, featuring the singles “Copycat” and “watch,”.</p>
+<h6 style="padding-left:180px">- Neil Yeung, allmusic.com</h6>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+</body>
+

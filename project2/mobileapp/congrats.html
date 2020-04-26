@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+html{
+  background-color: #222222;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+color:white;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+    border-color:white;
+     padding-left: 50px;
+    border:1px solid white;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+  border-color:white;
+  border:1px solid white;
+}
+
+h2{
+  font-size: 15px;
+
+}
+p{
+font-size: 15px;
+
+}
+
+.dropdown {
+ 
+  margin-left: 208px;
+  position: relative;
+  background-color: #222222;
+  display: inline-block;
+  border-radius: 20%;
+    text-decoration: none;
+    font-size:12px;
+
+}
+
+.dropdown-content {
+  margin-top:10px;
+  background-color: #222222;
+  display: none;
+  position: absolute;
+ 
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5%;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+    text-decoration: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: ;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: ;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.item1 {
+ 
+ padding:20px;
+}
+
+.item2{
+text-align: left;
+margin-left: 180px;
+margin-top: -190px;
+
+}
+.boxed {
+  border: 1px solid white ;
+  height: 290px;
+  width: 250px;
+
+
+}
+.boxed1 {
+  border: 1px solid white ;
+  height: 50px;
+  width: 200px;
+font-size: 15px;
+
+}
+.item{
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+
+ .container {
+              width: 100%;
+          height: 100%;
+        }
+        .confetti {
+          width: 15px;
+          height: 15px;
+          background-color: #f2d74e;
+          position: absolute;
+          left: 50%;
+          animation: confetti 5s ease-in-out -2s infinite;
+          transform-origin: left top;
+        }
+        .confetti:nth-child(1) {
+          background-color: #f2d74e; left: 10%; animation-delay: 0;
+        }
+        .confetti:nth-child(2) {
+          background-color: #95c3de; left: 20%; animation-delay: -5s;
+        }
+        .confetti:nth-child(3) {
+          background-color: #ff9a91; left: 30%; animation-delay: -3s;
+        }
+        .confetti:nth-child(4) {
+          background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+        }
+        .confetti:nth-child(5) {
+          background-color: #95c3de; left: 50%; animation-delay: -4s;
+        }
+        .confetti:nth-child(6) {
+          background-color: #ff9a91; left: 60%; animation-delay: -6s;
+        }
+        .confetti:nth-child(7) {
+          background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+        }
+        .confetti:nth-child(8) {
+          background-color: #95c3de; left: 80%; animation-delay: -2s;
+        }
+        .confetti:nth-child(9) {
+          background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+        }
+        .confetti:nth-child(10) {
+          background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+        }
+
+        @keyframes confetti {
+          0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+          25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+          50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+          75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+          100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+        }
+</style>
+
+<body>
+
+<header class="w3-bar w3-card w3-theme">
+<div class="container">
+  <div class="confetti"></div>
+    <div class="confetti"></div>
+      <div class="confetti"></div>
+        <div class="confetti"></div>
+          <div class="confetti"></div>
+            <div class="confetti"></div>
+              <div class="confetti"></div>
+                <div class="confetti"></div>
+                  <div class="confetti"></div>
+                    <div class="confetti"></div>
+                      <div class="confetti"></div>
+                        <div class="confetti"></div>
+                          <div class="confetti"></div>
+                            <div class="confetti"></div>
+                              <div class="confetti"></div>
+                                <div class="confetti"></div>
+                                  <div class="confetti"></div>
+                                    <div class="confetti"></div>
+                                      <div class="confetti"></div>
+                                       <div class="confetti"></div>
+                            <div class="confetti"></div>
+                              <div class="confetti"></div>
+                                <div class="confetti"></div>
+                                  <div class="confetti"></div>
+                                    <div class="confetti"></div>
+                                      <div class="confetti"></div>
+                                      
+                                      
+</div>
+
+  <h1 class="w3-bar-item" style="font-weight: 900"><span style="padding:10px" onclick="openNav()">&#9776;</span>NYC CONCERTS<span style="font-weight: 300"> 2020 </span> </h1>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="height:10px"  style="width:10px">&times;</a>
+  <a href="mobile.html">HOME</a>
+  <a href="about1.html">ABOUT</a>
+  <a href="sign.html">SIGN IN</a>
+  <a href="create.html">CREATE ACCOUNT</a>
+</div>
+</header>
+<center>
+<div class="boxed" style="margin-top:100px"><br>
+  <h2>Congratulations!</h2>
+  <br>
+  <p>YOU’VE SUCESSFULLY PURCHASED A TICKET.
+CHECK YOUR EMAIL FOR UPDATES.</p><br>
+
+<a href="mobile.html" style="text-decoration: none"> 
+<div class="boxed1" style="">
+  <p style="padding-top:0px"> BACK TO BROWZE</p>
+</div></a>
+</div>
+ </center>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+</body>
+
